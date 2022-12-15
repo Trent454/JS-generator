@@ -19,13 +19,14 @@ const que=[
     "Yes",		
     "Signs point to yes",
 ];
+
 document.getElementById("response").innerHTML=que;
 
-function myFunction(){
-    que.sort(function(a,b){return 0.5 - Math.random()});
-    document.getElementById("response").innerHTML=que[0];
-    document.getElementById("response").style.fontSize="20px";
-    setTimeout(timesOut, 4000);
+    function myFunction(){
+        que.sort(function(a,b){return 0.5 - Math.random()});
+        document.getElementById("response").innerHTML=que[0];
+        document.getElementById("response").style.fontSize="20px";
+        setTimeout(timesOut, 4000);
 
     function timesOut(){
         document.getElementById("response").innerHTML="8";
